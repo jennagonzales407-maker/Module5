@@ -10,7 +10,7 @@
   <script>
     // Dog object with properties, including mySound
     const dog = {
-      name: "Buddy",
+      name: "Brady Harrington",
       breed: "Golden Retriever",
       age: 3,
       color: "golden",
