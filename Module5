@@ -8,19 +8,22 @@
   <p id="dog-description"></p>
 
   <script>
-    // Dog object with properties
+    // Dog object with properties, including mySound
     const dog = {
-      name: "Buddy",
+      name: "Brady Harrington",
       breed: "Golden Retriever",
       age: 3,
-      color: "golden"
+      color: "golden",
+      mySound: "I sound very friendly and full of energy!"
     };
 
     // Build a message using each property
-    const message = `${dog.name} is a ${dog.age}-year-old ${dog.color} ${dog.breed}.`;
+    const message = `${dog.name} is a ${dog.age}-year-old ${dog.color} ${dog.breed}. ` +
+                    `When you hear me, I say: "${dog.mySound}"`;
 
-    // Display the message in the page
-    document.getElementById("dog-description").textContent = message;
+    // Display the message to the user by putting it in the <p> element
+    const descriptionElement = document.getElementById("dog-description");
+    descriptionElement.textContent = message;
   </script>
 </body>
 </html>
