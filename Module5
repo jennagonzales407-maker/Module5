@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog Description</title>
+</head>
+<body>
+  <p id="dog-description"></p>
+
+  <script>
+    // Dog object with properties
+    const dog = {
+      name: "Buddy",
+      breed: "Golden Retriever",
+      age: 3,
+      color: "golden"
+    };
+
+    // Build a message using each property
+    const message = `${dog.name} is a ${dog.age}-year-old ${dog.color} ${dog.breed}.`;
+
+    // Display the message in the page
+    document.getElementById("dog-description").textContent = message;
+  </script>
+</body>
+</html>
